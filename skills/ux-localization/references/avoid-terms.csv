@@ -1,0 +1,90 @@
+locale,regex,prefer,severity,rule_id,note
+ko-KR,당신,omit the pronoun or name the role,warn,KO-01,Pronoun copied from English you
+ko-KR,그녀|그들,omit or name the role,warn,ENKO-07,Pronoun copied from English
+ko-KR,되어지,됩니다 / 되었습니다,warn,KO-12,Stacked passive
+ko-KR,에 있어서,restructure the sentence,warn,KO-15,Calque of in terms of
+ko-KR,[을를] 통해,에서 / 로 / 해서,info,KO-16,Calque of through or via; fine when it really means via a channel
+ko-KR,가지고 있,있다,info,KO-17,Calque of have
+ko-KR,것이 가능,할 수 있습니다,warn,KO-18,Calque of it is possible to
+ko-KR,성공적으로,drop it,warn,KO-20,Adds nothing to a success message
+ko-KR,에 의해,make the agent the subject,info,ENKO-03,Calque of by in passives
+ko-KR,로부터,에서,info,ENKO-04,Calque of from
+ko-KR,해당,name the object,info,KO-24,Vague reference
+ko-KR,되셨,되었습니다 (unless the subject is a person),info,KO-03,Honorific on an object or system state
+ko-KR,[。、],"Western period or comma",warn,KO-PUNCT,Korean uses Western punctuation
+ja-JP,あなたの,omit,info,JA-01,Pronoun copied from English your
+ja-JP,を行[いうっえ],verb + する form,info,JA-03,Nominalization with 行う
+ja-JP,させていただ,simpler polite form,info,JA-12,Possible over-honorific in UI
+ja-JP,[ｦ-ﾟ],full-width katakana,warn,JA-15,Half-width katakana
+ja-JP,[Ａ-Ｚａ-ｚ０-９],half-width Latin letters and digits,info,JA-15,Full-width Latin letters or digits
+zh-Hans-CN,登陆,登录,error,ZHCN-01,Sign-in term
+zh-Hans-CN,被成功|成功地,文件已保存 style,warn,ZHCN-03,Translationese in success messages
+zh-Hans-CN,进行(保存|删除|上传|下载|编辑|搜索),verb + object,info,ZHCN-10,Nominalization with 进行
+zh-Hans-CN,一个新的,新建 or drop,info,ENZH-04,Calque of a new
+zh-Hant-TW,軟件,軟體,warn,ZHTW-01,Mainland term after conversion
+zh-Hant-TW,文件夾,資料夾,warn,ZHTW-02,Mainland term after conversion
+zh-Hant-TW,導出,匯出,warn,ZHTW-04,Mainland term after conversion
+zh-Hant-TW,導入,匯入,warn,ZHTW-04,Mainland term after conversion
+zh-Hant-TW,鏈接,連結,warn,ZHTW-07,Mainland term after conversion
+zh-Hant-TW,視頻,影片,warn,ZHTW-09,Mainland term after conversion
+zh-Hant-TW,默認,預設,warn,ZHTW-09,Mainland term after conversion
+zh-Hant-TW,網絡,網路,warn,ZHTW-09,Mainland term after conversion
+zh-Hant-TW,信息,訊息 or 資訊,warn,ZHTW-09,Mainland term after conversion
+zh-Hant-TW,服務器,伺服器,warn,ZHTW-09,Mainland term after conversion
+zh-Hant-TW,菜單,選單,warn,ZHTW-09,Mainland term after conversion
+zh-Hant-TW,屏幕,螢幕,warn,ZHTW-09,Mainland term after conversion
+zh-Hant-TW,激活,啟用,warn,ZHTW-09,Mainland term after conversion
+zh-Hant-TW,打印,列印,warn,ZHTW-09,Mainland term after conversion
+zh-Hant-TW,用戶,使用者,info,ZHTW-09,Mainland term after conversion
+zh-Hant-TW,數據,資料,info,ZHTW-09,Mainland term after conversion
+zh-Hant-TW,項目,專案 (when it means project),info,ZHTW-09,項目 also means item in Taiwan
+zh-Hant-TW,支持,支援 (when it means compatibility),info,ZHTW-09,支持 is also valid for endorse
+zh-Hant-TW,登錄,登入 (for sign in),info,ZHTW-03,Fine when it means register a record
+zh-Hant-TW,被成功|成功地,檔案已儲存 style,warn,ZHTW-05,Translationese in success messages
+zh-Hant-TW,[“”],「」,info,ZHTW-10,Taiwan quotation marks
+fr-FR,\bsupport(é|ée|és|ées|er|e)\b,pris en charge / prendre en charge,warn,FR-08,False friend
+fr-FR,\blibrairie\b,bibliothèque (software library),info,FR-09,librairie means bookshop
+fr-FR,\b[ée]ventuellement\b,"à terme, finalement (if eventually was meant)",info,FR-09,éventuellement means possibly
+fr-FR,avec succès,drop it,info,FR-13,Translationese in success messages
+fr-FR,\bBienvenu\b,Bienvenue,warn,FR-18,Gendered adjective form
+fr-FR,"\bE-mail\b|\bEmail\b|\bmail\b",one chosen form (e-mail or courriel),info,FR-17,Check consistency
+de-DE,\bEmail\b|\beMail\b|\bE-mail\b,E-Mail,warn,DE-15,Standard spelling
+de-DE,E-?[Mm]ail Adresse,E-Mail-Adresse,warn,DE-03,Compounds are hyphenated
+de-DE,\berfolgreich\b,drop it in success messages,info,DE-08,Often redundant
+de-DE,\b[A-ZÄÖÜ][a-zäöüß]+'s\b,Name + s without apostrophe or 'von',info,DE-10,English-style genitive apostrophe
+de-DE,\{[A-Za-z_]+\}'s,Projekt von {name},warn,DE-10,Genitive apostrophe after a variable
+de-DE,\bBitte (speichern|löschen|klicken)\b,bare infinitive on buttons,info,DE-07,Bitte on a button
+de-DE,"\b[Aa]bo(nnement)?s? (abbrechen|beenden|verwalten)\b","Abonnement kündigen (or the § 312k label)",warn,DE-06,"abbrechen stops an operation; beenden and verwalten do not clearly terminate a contract (DE-14)"
+es,soportad[oa]s?\b|\bsoporta\b,compatible / se admite,warn,ES-07,False friend
+es,\bexitosamente\b|\bcon éxito\b,drop it,info,ES-05,Translationese in success messages
+es,\b[Rr]ealizar (una|un|el|la)\b,the specific verb,info,ES-09,Calque of perform a
+es,\bBienvenido\b,Te damos la bienvenida,info,ES-04,Assumes a male user
+es,\blibrería\b,biblioteca (software library),info,ES-08,librería means bookshop
+es-ES,\bremover\b|\bremueve\b|\bremovido\b,quitar,warn,ESES-01,remover for UI remove reads as an anglicism in Spain
+es-ES,\bcomputadora\b|\bcelular\b,ordenador / móvil,info,ES-14,Latin American term in es-ES
+es-419,\bordenador\b,computadora,warn,ES419-01,Spain term
+es-419,\bm[óo]vil\b,celular (when it means phone),info,ES419-01,Spain term
+es-419,\bcoger\b|\bcoge\b,tomar,warn,ES419-01,Vulgar in several countries
+es-419,\bfichero\b,archivo,warn,ES419-01,Spain term
+es-419,\bpinch(a|ar|e)\b,hacer clic,warn,ES419-01,Spain term
+es-419,\b(podéis|tenéis|guardad|haced|vosotros)\b,ustedes forms,warn,ES419-02,vosotros forms
+en,\b(informations|feedbacks|advices|softwares|equipments)\b,uncountable form,error,EN-01,Uncountable noun
+en,\bsuccessfully\b,drop it,info,EN-06,Often redundant
+en,\b(Login|Setup|Signup|Backup|Checkout) (to|your|the|a)\b,two-word verb form,warn,EN-08,Verb vs noun form
+en,\bcorresponding\b,name the object,info,EN-09,Calque of 해당 / 該当 / 该
+en,\b(hand ?phone|SNS|My page|mypage)\b,"phone, social media, Account",warn,EN-13,Non-English usage
+en,\b[Ii]nquir(y|ies|e)\b,Contact us / Get help,info,EN-14,Calque of 문의 / お問い合わせ
+en-GB,\b(canceled|canceling)\b,cancelled / cancelling,warn,ENGB-05,US spelling
+en-GB,\bZIP code\b,Postcode,warn,ENGB-05,US vocabulary
+en-GB,\b(color|favorite|center|behavior)s?\b,"colour, favourite, centre, behaviour",warn,ENGB-05,US spelling in displayed text (ignore code identifiers)
+en-GB,\bTrash\b,Bin (if the product follows UK vocabulary),info,ENGB-05,US vocabulary
+en-GB,\bprogramme\b,program (for software),info,ENGB-01,Check meaning
+en-US,\b(cancelled|cancelling|colour|favourite|centre|behaviour)s?\b,US spelling,warn,ENGB-05,UK spelling in en-US
+en-US,\bPostcode\b,ZIP code,info,ENGB-05,UK vocabulary
+ko-KR,책갈피,북마크 (Bookmarks),info,ALL-19,Literal translation; Chrome Firefox and Safari use 북마크
+ko-KR,미리 보기,미리보기,info,ALL-19,Chrome Android and Firefox write 미리보기
+zh-Hant-TW,幫助,說明 (Help),info,ALL-19,Taiwan UI uses 說明 for Help
+zh-Hant-TW,標籤頁,分頁 (browser tab),warn,ALL-19,Mainland-style term; Taiwan uses 分頁
+fr-FR,"\b[Tt]abs?\b(?![- ]?[A-Z])",Onglet (browser tab),info,ALL-19,Untranslated English UI word
+es,"\b[Tt]abs?\b(?![- ]?[A-Z])",Pestaña (browser tab),info,ALL-19,Untranslated English UI word
+de-DE,\bBookmarks?\b,Lesezeichen,info,ALL-19,Untranslated English UI word
